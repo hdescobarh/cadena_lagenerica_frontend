@@ -1,6 +1,0 @@
-/* para todos los elementos que se repiten; por 
-ejemplo, el icono del menu o un boton
-
-Aqui ya los nombres van por clases
-
-*/

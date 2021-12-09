@@ -4,6 +4,10 @@ $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
 
+$.get("footer.html", function(data){
+    $("#footer-placeholder").replaceWith(data);
+});
+
 $(document).on("click", "#btn_cerrar_sesion", function(){
     closeSession()  
 });

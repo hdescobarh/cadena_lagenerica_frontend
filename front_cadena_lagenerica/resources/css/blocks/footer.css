@@ -1,0 +1,24 @@
+.footer{
+    display: flex;
+}
+
+#footer_text, #git_text {
+    color: #66638A;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+#git_text a{
+    text-decoration: none;
+}
+
+.footer img{
+    display: block;
+    width:inherit;
+    height:50px;
+    margin-right: 45px;
+    margin-top: 5px;
+ }
