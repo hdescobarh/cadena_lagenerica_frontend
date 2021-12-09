@@ -69,14 +69,3 @@ footer {
     max-height: 100%;
 }
 
-.info_box{
-    color: #66638A;
-    font-size: larger;
-    margin-bottom: 100px;
-    font-weight:bolder;
-}
-
-.info_box p{
-    font-family: 'Cabin', sans-serif;
-}
-

@@ -1,0 +1,10 @@
+.info_box{
+    color: #66638A;
+    font-size:medium;
+    margin-bottom: 100px;
+    font-weight:bolder;
+}
+
+.info_box p{
+    font-family: 'Cabin', sans-serif;
+}

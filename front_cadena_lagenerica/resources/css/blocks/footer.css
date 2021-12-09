@@ -12,7 +12,9 @@
 }
 
 #git_text a{
+    color: black;
     text-decoration: none;
+    
 }
 
 .footer img{
