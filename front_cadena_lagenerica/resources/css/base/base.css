@@ -1,0 +1,56 @@
+/* estilos generales, los que se dan a través de las etiquetas
+;por ejemplo, body, titulos, enlaces, imagenes*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cabin', sans-serif;
+    background-color: #FFFFFF;
+    color: #5E5B47;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+button {
+    border-radius: 8px;
+    background-color: #8581B3;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    background-color: #ECEBFF;;
+    color: #66638A;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    text-align: center;
+    border: none;
+    margin-bottom: 30px;
+}
+
+thead{
+    letter-spacing: 1px;
+}
+
+tbody {
+    color: #5E5B47;;
+    background-color: #FFFCEB;
+}

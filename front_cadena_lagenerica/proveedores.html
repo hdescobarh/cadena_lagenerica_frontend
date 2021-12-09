@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="resources/css/master.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/session_management.js"></script>
+    <script src="resources/js/proveedores.js"></script>
+    <title>Proveedores</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Tienda Genérica</h1>
+      </div>
+      <div id="nav-placeholder">
+      </div>
+    </header>
+    <main>
+      <form method="get" class="general-form">
+        <div class="general-form">
+          <label for="nitproveedor">NIT</label>
+          <input name="nitproveedor" id="nitproveedor" />
+          <label for="telefono_proveedor">Teléfono</label>
+          <input name="telefono_proveedor" id="telefono_proveedor" />
+        </div>
+        <div class="general-form">
+          <label for="nombre_proveedor">Nombre proveedor</label>
+          <input name="nombre_proveedor" id="nombre_proveedor" />
+          <label for="ciudad_proveedor">Ciudad</label>
+          <input name="ciudad_proveedor" id="ciudad_proveedor" />
+        </div>
+        <div class="general-form">
+          <label for="direccion_proveedor">Dirección</label>
+          <input name="direccion_proveedor" id="direccion_proveedor" />
+        </div>
+      </form>
+      <div class="form-buttons">
+        <button id="btn_proveedor_consultar">Consultar</button>
+        <button id="btn_proveedor_crear">Crear</button>
+        <button id="btn_proveedor_actualizar">Actualizar</button>
+        <button id="btn_proveedor_borrar">Borrar</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="resources/css/master.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/clientes.js"></script>
+    <script src="resources/js/session_management.js"></script>
+    <title>Clientes</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Tienda Genérica</h1>
+      </div>
+      <div id="nav-placeholder">
+      </div>
+    </header>
+    <main>
+      <form method="get" class="general-form">
+        <div class="general-form">
+          <label for="cedula_cliente">Cédula</label>
+          <input name="cedula_cliente" id="cedula_cliente" />
+          <label for="telefono_cliente">Teléfono</label>
+          <input name="telefono_cliente" id="telefono_cliente" />
+        </div>
+        <div class="general-form">
+          <label for="nombre_cliente">Nombre completo</label>
+          <input name="nombre_cliente" id="nombre_cliente" />
+          <label for="email_cliente">Correo electrónico</label>
+          <input name="email_cliente" id="email_cliente" />
+        </div>
+        <div class="general-form">
+          <label for="direccion_cliente">Dirección</label>
+          <input name="direccion_cliente" id="direccion_cliente" />
+        </div>
+      </form>
+      <div class="form-buttons">
+        <button id="btn_cliente_consultar">Consultar</button>
+        <button id="btn_cliente_crear">Crear</button>
+        <button id="btn_cliente_actualizar">Actualizar</button>
+        <button id="btn_cliente_borrar">Borrar</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

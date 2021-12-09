@@ -1,0 +1,24 @@
+.nav-bar{
+    display: flex;
+    background-color: #ECEBFF;
+    margin-bottom: 50px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+li.nav-bar{
+    margin: 0px;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+li.nav-bar a, #btn_cerrar_sesion{
+    color: #66638A;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

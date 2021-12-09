@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="resources/css/master.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/session_management.js"></script>
+    <script src="resources/js/productos.js"></script>
+    <title>Productos</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Tienda Genérica</h1>
+      </div>
+      <div id="nav-placeholder">
+      </div>
+    </header>
+    <main>
+<form enctype="multipart/form-data" class="general-form">
+        <div class="general-form">
+          <label for="nombre_archivo">Cargar archivo CSV</label>
+          <input type="file" name="nombre_archivo" id="archivo_csv" accept=".csv" required/>
+        </div>
+      </form>
+      <div class="preview">
+        <table>
+          <thead>
+            <tr>
+              <td>Código producto</td>
+              <td>Nombre producto</td>
+              <td>NIT proveedor</td>
+              <td>Precio de compra</td>
+              <td>IVA de compra</td>
+              <td>Precio de venta</td>
+              <td>Carga</td>
+            </tr>
+          </thead>
+          <tbody id="preview">
+          </tbody>
+        </table>
+      </div> 
+      <div class="form-buttons">
+        <button id="btn_cargar_csv">Cargar</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

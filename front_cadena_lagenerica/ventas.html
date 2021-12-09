@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="resources/css/master.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/session_management.js"></script>
+    <title>Ventas</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <h1>Tienda Genérica</h1>
+      </div>
+      <div id="nav-placeholder"></div>
+    </header>
+    <form name="sales-form" id="sales-form" class="sales-form">
+      <div class="sales-form">
+        <label for="cedula_cliente">Cédula</label>
+        <input name="cedula_cliente" id="cedula_cliente" />
+        <button>Consultar</button>
+        <label for="nombre_cliente">Cliente</label>
+        <input name="nombre_cliente" id="nombre_cliente" />
+        <label for="codigo_venta">Consecutivo</label>
+        <input name="codigo_venta" id="codigo_venta" />
+      </div>
+      <div id="items-detalle-venta" class="sales-form">
+        <input
+          name="codigo_producto"
+          id="codigo_producto"
+          placeholder="Cod. producto"
+        />
+        <button>Consultar</button>
+        <input
+          name="nombre_producto"
+          id="nombre_producto"
+          placeholder="Nombre producto"
+        />
+        <input
+          name="cantidad_producto"
+          id="cantidad_producto"
+          placeholder="Cant."
+        />
+        <input name="valor_total" id="valor_total" placeholder="Vlr. total" />
+      </div>
+      <div class="sales-form">
+        <div>
+          <label for="total_venta">Total venta</label>
+          <input name="total_venta" id="total_venta" />
+        </div>
+        <div>
+          <label for="ivaventa">Total IVA</label>
+          <input name="ivaventa" id="ivaventa" />
+        </div>
+        <div>
+          <label for="valor_venta">Total con IVA</label>
+          <input name="valor_venta" id="valor_venta" />
+        </div>
+      </div>
+    </form>
+    <div class="form-buttons">
+        <button type="submit" form="sales-form" formaction="" formmethod="post">Confirmar</button>  
+      </div>
+  </body>
+</html>

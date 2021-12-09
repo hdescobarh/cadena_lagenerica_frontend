@@ -1,0 +1,26 @@
+form.general-form{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+div.general-form {
+    display: table-row;
+}
+
+div.general-form label,
+div.general-form input,
+div.general-form button {
+    display: table-cell;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+div.general-form label {
+    padding-right: 10px;
+}
+
+div.general-form input {
+    margin-right: 30px;
+}
