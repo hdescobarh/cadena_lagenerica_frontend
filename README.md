@@ -3,8 +3,9 @@
 ## Tecnologías empleadas
 
 ![HTML](https://img.shields.io/badge/-HTML-ebebeb?logo=html5)
-![CSS](https://img.shields.io/badge/-CSS-0868ac?logo=css3)
-![jQuery](https://img.shields.io/badge/-jQuery-131b28?logo=jquery)
+![CSS](https://img.shields.io/badge/-CSS-2965f1?logo=css3)
+![JavaScript](https://img.shields.io/badge/-JavaScript-323330?logo=javascript)
+![jQuery](https://img.shields.io/badge/-jQuery-0868ac?logo=jquery)
 
 ## Descripción
 
