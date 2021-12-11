@@ -1,4 +1,12 @@
+const SEDE = "Bogotá"
 const ENDPOINT = "http://localhost:8888/";
+const CUSTOMERS_ENDPOINT = ENDPOINT + "clientes/"
+const VENTAS_ENDPOINT = ENDPOINT + "ventas/"
+const DETALLES_ENDPOINT = ENDPOINT + "detalleventas/"
+const LOGIN_ENDPOINT = ENDPOINT + "usuarios/login"
+const PRODUCT_ENDPOINT = ENDPOINT + "productos/"
+const SUPPLIER_ENDPOINT = ENDPOINT + "proveedores/"
+var current_user = sessionStorage.getItem("sesion_user")
 
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);

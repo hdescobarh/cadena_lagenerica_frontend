@@ -1,4 +1,4 @@
-const LOGIN_ENDPOINT = ENDPOINT + "usuarios/login"
+
 
 $(document).on("click", "#login_button", function(){
     $.ajax({
@@ -12,6 +12,7 @@ $(document).on("click", "#login_button", function(){
             sessionStorage.setItem("active_sesion", true);
             sessionStorage.setItem("sesion_user", response["usuario"]);
             sessionStorage.setItem("sesion_token", response["token"]);
+            sessionStorage.setItem("sesion_id", response["cedula_usuario"]);
             window.location.href = "/index.html";
             }
     }).fail(function(jqXHR, textStatus) {

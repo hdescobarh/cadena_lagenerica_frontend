@@ -1,4 +1,4 @@
-const PRODUCT_ENDPOINT = ENDPOINT + "productos/"
+
 
 var listaItems = null;
 

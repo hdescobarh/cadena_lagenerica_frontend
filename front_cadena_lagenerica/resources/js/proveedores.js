@@ -1,4 +1,4 @@
-const USERS_ENDPOINT = ENDPOINT + "proveedores/"
+
 
 var supplier_dict = { "nitproveedor": null,
                 "ciudad_proveedor": null,
@@ -12,7 +12,7 @@ $(document).on("click", "#btn_proveedor_consultar", function() {
     $.ajax({
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + document.getElementById("nitproveedor").value,
+        url: SUPPLIER_ENDPOINT + document.getElementById("nitproveedor").value,
         success: function(result){
             $.each(result, function(key, value){
                 if(Object.keys(supplier_dict).includes(key)){
@@ -36,7 +36,7 @@ $(document).on("click", "#btn_proveedor_crear", function(){
         method: "POST",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "guardar",
+        url: SUPPLIER_ENDPOINT + "guardar",
         data: JSON.stringify(data),
         success: function(data, textStatus, jqXHR){
             $("input").val("");
@@ -63,7 +63,7 @@ $(document).on("click", "#btn_proveedor_actualizar", function(){
         method: "PUT",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "actualizar",
+        url: SUPPLIER_ENDPOINT + "actualizar",
         data: JSON.stringify(data),
         success: function(){
             $("input").val("");
@@ -81,7 +81,7 @@ $(document).on("click", "#btn_proveedor_borrar", function(){
         method: "DELETE",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "eliminar/" + document.getElementById("nitproveedor").value,
+        url: SUPPLIER_ENDPOINT + "eliminar/" + document.getElementById("nitproveedor").value,
         success: function(){
             $("input").val("");
             alert("El proveedor ha sido eliminado")

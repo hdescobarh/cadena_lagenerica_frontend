@@ -1,4 +1,3 @@
-const USERS_ENDPOINT = ENDPOINT + "clientes/"
 
 var customer_dict = {"cedula_cliente": null,
     "direccion_cliente": null,
@@ -12,7 +11,7 @@ $(document).on("click", "#btn_cliente_consultar", function() {
     $.ajax({
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + document.getElementById("cedula_cliente").value,
+        url: CUSTOMERS_ENDPOINT + document.getElementById("cedula_cliente").value,
         success: function(result){
             $.each(result, function(key, value){
                 if(Object.keys(customer_dict).includes(key)){
@@ -37,7 +36,7 @@ $(document).on("click", "#btn_cliente_crear", function(){
         method: "POST",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "guardar",
+        url: CUSTOMERS_ENDPOINT + "guardar",
         data: JSON.stringify(data),
         success: function(data, textStatus, jqXHR){
             $("input").val("");
@@ -65,7 +64,7 @@ $(document).on("click", "#btn_cliente_actualizar", function(){
         method: "PUT",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "actualizar",
+        url: CUSTOMERS_ENDPOINT + "actualizar",
         data: JSON.stringify(data),
         success: function(){
             $("input").val("");
@@ -83,7 +82,7 @@ $(document).on("click", "#btn_cliente_borrar", function(){
         method: "DELETE",
         contentType: "application/json",
         dataType: "json",
-        url: USERS_ENDPOINT + "eliminar/" + document.getElementById("cedula_cliente").value,
+        url: CUSTOMERS_ENDPOINT + "eliminar/" + document.getElementById("cedula_cliente").value,
         success: function(){
             $("input").val("");
             alert("El cliente ha sido eliminado")
