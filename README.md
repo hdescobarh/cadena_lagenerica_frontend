@@ -11,6 +11,14 @@
 
 Este repositorio contiene el proyecto de una pagína Web estática que se conectara a la [REST API](https://github.com/hdescobarh/cadena_lagenerica_backend). Ambas constityen el frontend y backend desarrollados como parte del proyecto final para el ciclo de Desarrollo Web del programa [Misión TIC 2022](https://www.misiontic2022.gov.co/portal/)
 
+## Configuración de la conexión a la API
+
+- STORENAME: nombre de la tienda que aparecera en el header
+- SEDE: nombre de la sucursal que aparecera en el header
+- SEDE_REF: codigo que identifica cada una de las sucursales, se emplea para conectar al modulo de consolidación de la sede principal
+- ENDPOINT: URL de la API de la sede **ACTUAL**
+- ENDPOINT_PRINCIPAL: URL de la sede **PRINCIPAL**
+
 ## Archivos adicionales
 
 - Documento [CSV](./ejemplo_productos.csv) para realizar prueba a la pagína de productos.
