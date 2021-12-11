@@ -8,3 +8,24 @@
 .info_box p{
     font-family: 'Cabin', sans-serif;
 }
+
+#index_box{
+    text-align: center;
+}
+#index_box h2, h3 a{
+    color: #5E5B47;
+}
+
+#index_box h2, h3{
+    font-size:x-large;
+}
+
+#index_box h3, p{
+    font-weight: normal;
+    font-family: 'Cabin', sans-serif;
+}
+
+#index_box .tags{
+    display: inline-block;
+    height: 23px;
+}
