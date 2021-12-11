@@ -97,7 +97,7 @@ $(document).on("click", "#btn_reportes_ventas_cliente", function() {
             <tfoot>\
                 <tr>\
                     <td colspan='2'>Total ventas</td>\
-                    <td>0000</td>\
+                    <td id= sumatoria_total>0000</td>\
                 </tr>\
             </tfoot>\
         </table>"
